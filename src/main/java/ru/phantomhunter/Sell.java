@@ -2,6 +2,7 @@ package ru.phantomhunter;
 
 
 import javax.persistence.*;
+import javax.xml.crypto.Data;
 
 import java.util.List;
 
@@ -13,8 +14,8 @@ public class Sell {
     @GeneratedValue
     @Column(name = "sell_id")
     private Long id;
-//    @Column(name = "Data_sells")
-//    private Data data;
+    @Column(name = "Data_sells")
+    private Data data;
 
     @ManyToOne()
     @JoinColumn
